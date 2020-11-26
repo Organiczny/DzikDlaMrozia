@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom_bar"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.dzik.FragMain"
+        android:label="fragment_main"
+        tools:layout="@layout/frag_main" />
+    <fragment
+        android:id="@+id/historia_zgloszen"
+        android:name="com.example.dzik.FragHistory"
+        android:label="fragment_historia_zgloszen"
+        tools:layout="@layout/frag_history" />
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.dzik.FragAccount"
+        android:label="fragment_account"
+        tools:layout="@layout/frag_account" />
+    <fragment
+        android:id="@+id/my_area"
+        android:name="com.example.dzik.FragMyArea"
+        android:label="fragment_my_area"
+        tools:layout="@layout/frag_my_area" />
+</navigation>
