@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        app:cardBackgroundColor="@color/background_color"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pop_topic_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/pop_topic_anuluj"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/pop_text_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/pop_text_anuluj"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:paddingHorizontal="40dp"
+                    android:id="@+id/rg_powody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio_anuluj1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="@string/pop_text_powod1"
+
+                        android:textColor="@color/green" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anuluj2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="@string/pop_text_powod2"
+                        android:textColor="@color/green" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anuluj3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="@string/pop_text_powod3"
+                        android:textColor="@color/green" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anuluj4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="@string/pop_text_powod4"
+                        android:textColor="@color/green" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anuluj5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="@string/pop_text_powod5"
+                        android:textColor="@color/green" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anuluj6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="@string/pop_text_powod6"
+                        android:textColor="@color/green" />
+
+                    <EditText
+                        android:id="@+id/et_powod"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+
+                        android:background="@drawable/et_custom"
+                        android:enabled="false"
+                        android:hint="inne"
+                        android:gravity="start"
+                        android:textColor="@color/green"
+                        android:textColorHint="@color/green" />
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnReturn_neg"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/but_basic_bg"
+                        android:padding="5dp"
+                        android:text="@string/pop_btn_neg"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/dialog_anuluj_but_anuluj"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/but_basic_bg"
+                        android:padding="5dp"
+                        android:text="@string/pop_btn_pos"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
