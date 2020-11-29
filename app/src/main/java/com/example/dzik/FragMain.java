@@ -64,12 +64,7 @@ FragMain extends Fragment {
         View v = inflater.inflate(R.layout.frag_main, container, false);
 
         Button but = v.findViewById(R.id.main_but_report);
-        but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), AcReport.class));
-            }
-        });
+        but.setOnClickListener(v1 -> startActivity(new Intent(getActivity(), AcReport.class)));
 
 
         return v;

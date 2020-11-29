@@ -7,15 +7,29 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
 
     <color name="background_color">@color/white</color>
     <color name="text_color_basic">@color/black</color>
+    <color name="text_color_on_but">@color/white</color>
+    <color name="text_color_error">@color/red</color>
     <color name="but_basic_bg">#C5C5C5</color>
+
+<!--    mroiza-->
+    <color name="btn_report_color">#e84118</color>
+    <color name="popBackground">#81ecec</color>
+    <color name="etPressed">#F3E5E4</color>
+    <color name="etBasic">#FFFFFF</color>
+    <color name="etNotEnable">#D1D9DC</color>
 
 
     <color name="green_dark">#014E01</color>
     <color name="green">#016128</color>
     <color name="green_light">#07B64E</color>
     <color name="brown">#4B1717</color>
+    <color name="myDarkGreen">#10ac84</color>
+    <color name="myLightGreen">#1dd1a1</color>
+    <color name="LightBgGreen">#91FFE2</color>
+
     <color name="grey">#646464</color>
 </resources>

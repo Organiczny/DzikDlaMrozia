@@ -1,10 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".AcLogin">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AcRegister">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Logowanie"
+        android:textColor="@color/text_color_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+    <EditText
+        android:id="@+id/ac_log_et_email"
+
+
+
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:text="email11@wp.pl"
+
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/et_basic_bg"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_on_but" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/ac_log_et_code"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/et_basic_bg"
+        android:ems="10"
+        android:hint="pin"
+        android:inputType="number|textPassword"
+        android:maxLength="4"
+        android:selectAllOnFocus="false"
+        android:text="1234"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+
+    <TextView
+        android:id="@+id/ac_log_tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_error"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/ac_log_but_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/but_basic_bg"
+        android:text="Zaloguj "
+        android:textColor="@color/text_color_on_but" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+</LinearLayout>

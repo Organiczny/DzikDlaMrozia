@@ -12,4 +12,23 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="but_change1">Zmien</string>
+    <string name="but_change2">Anuluj</string>
+    <string name="pop_btn_neg">Cofnij</string>
+
+
+<!--    mroiz-->
+
+    <string name="pop_topic_anuluj">Anuluj Zgłoszenie</string>
+    <string name="pop_text_anuluj">Wybierz powód anuluwania zgłoszenia:</string>
+
+
+    <string name="pop_text_powod1">To nie był dzik</string>
+    <string name="pop_text_powod2">Nieprawidłowa liczba dzików</string>
+    <string name="pop_text_powod3">Nieprawidłowe określenie stanu życia dzika</string>
+    <string name="pop_text_powod4">Nieprawidłowe zdjęcie</string>
+    <string name="pop_text_powod5">Nieprawidłowa lokalizacja</string>
+    <string name="pop_text_powod6">Inne</string>
+
+    <string name="pop_btn_pos">Anuluj</string>
 </resources>

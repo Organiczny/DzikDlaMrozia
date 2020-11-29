@@ -1,5 +1,7 @@
 package com.example.dzik;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import static android.content.Context.MODE_PRIVATE;
+import static com.example.dzik.DataManager.SHARED_PREFS;
+import static com.example.dzik.DataManager.UNIQ_ID;
+import static com.example.dzik.DataManager.UNIQ_ID_DEF;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -53,12 +61,27 @@ public class FragMyArea extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View v =inflater.inflate(R.layout.frag_my_area, container, false);
+
+        Button but = v.findViewById(R.id.reset);
+        but.setOnClickListener(v1 -> {
+            SharedPreferences sp = getActivity().getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+            SharedPreferences.Editor editor = sp.edit();
+            editor.putString(UNIQ_ID, "null1");
+            editor.putString(UNIQ_ID_DEF, "null1");
+            editor.apply();
+        });
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.frag_my_area, container, false);
+        return v;
     }
 }
