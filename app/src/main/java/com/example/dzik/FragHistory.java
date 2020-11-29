@@ -90,8 +90,6 @@ public class FragHistory extends Fragment {
 
     }
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -121,6 +119,9 @@ public class FragHistory extends Fragment {
 
         return v;
     }
+
+
+
 
 
 
@@ -198,7 +199,7 @@ public class FragHistory extends Fragment {
                     opisy.addElement(list.get(i).getDescrip());
                     data.addElement(list.get(i).getDate());
                     status.addElement(list.get(i).getStatus());
-                    miejsce.addElement(list.get(i).getLoc_pow());
+                    miejsce.addElement(list.get(i).getLoc_pow() );
                     ileMlodych.addElement(list.get(i).getNum_young());
                     ileStarych.addElement(list.get(i).getNum_old());
                 }
@@ -231,5 +232,7 @@ public class FragHistory extends Fragment {
 
 
     }
+
+
 
 }

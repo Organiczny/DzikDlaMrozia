@@ -16,6 +16,21 @@
         android:layout_weight="8" />
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zmień swoje dane"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,5 +150,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="170" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/but_basic_bg"
+        android:text="Wyloguj" />
 
 </LinearLayout>

@@ -22,10 +22,9 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/background_color"
+        android:background="@drawable/bg_bottom_bar"
         app:itemHorizontalTranslationEnabled="true"
         app:itemIconTint="@color/green_dark"
-
 
 
         app:itemTextColor="@color/green"
