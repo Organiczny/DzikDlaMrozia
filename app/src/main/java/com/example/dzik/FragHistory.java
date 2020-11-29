@@ -90,13 +90,14 @@ public class FragHistory extends Fragment {
 
     }
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.frag_history, container, false);
         recyclerView = (RecyclerView) v.findViewById(R.id.rv_historia);
-        tv_error = v.findViewById(R.id.frag_history_tv_error);
 //        Log.d(TAG, "onCreateView: to jest rv:"+recyclerView);
 
         context = container.getContext();
@@ -120,6 +121,8 @@ public class FragHistory extends Fragment {
 
         return v;
     }
+
+
 
     private void Toast(String text1, int color) {
         LayoutInflater inflater = getLayoutInflater();
@@ -228,6 +231,5 @@ public class FragHistory extends Fragment {
 
 
     }
-
 
 }
